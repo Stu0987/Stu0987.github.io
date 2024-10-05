@@ -14,7 +14,7 @@ header {
     color: #d1d1d1; /* Light grey text */
     padding: 1rem;
     text-align: center;
-    text-shadow: #000 0 2px 4px;
+    text-shadow: #000 0 4px 8px;
 }
 
 header nav ul {
@@ -43,7 +43,7 @@ header nav ul li a:hover {
 /* Main Content Styling */
 main {
     padding: 2rem;
-    background-color: #f4f4f4; /* Light grey background */
+    background-color: #cecece; /* Light grey background */
     margin: 1rem auto;
     max-width: 800px;
     border-radius: 8px;
