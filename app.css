@@ -17,6 +17,7 @@ header {
 }
 
 header nav ul {
+    background-color: #fff;
     list-style: none;
     padding: 0;
     display: flex;
