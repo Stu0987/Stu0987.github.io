@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #933d3d; /* Light grey background for overall body */
+    background-color: #933d3d; /* Red background for overall body */
     color: #333; /* Dark grey text for readability */
 }
 
 /* Header Styling */
 header {
-    background-color: #333; /* Grey background for header */
-    color: #f4f4f4; /* White text for contrast */
+    background-color: #333; /* Dark grey background */
+    color: #f4f4f4; /* Light grey text */
     padding: 1rem;
     text-align: center;
     text-shadow: #ccc 0 2px 4px;
@@ -26,26 +26,24 @@ header nav ul {
 }
 
 header nav ul li {
-    text-transform: capitalize;
     font-weight: bold;
-    color: #ffffff;
 }
 
 header nav ul li a {
-    color: #933d3d; /* White links for visibility on black background */
+    color: #933d3d; /* Red link color */
     text-decoration: none;
     transition: color 0.3s;
     text-shadow: black 0 4px 8px;
 }
 
 header nav ul li a:hover {
-    color: #ccc; /* Light grey for hover effect */
+    color: #ccc; /* Grey hover effect */
 }
 
 /* Main Content Styling */
 main {
     padding: 2rem;
-    background-color: #f4f4f4; /* White background for main content */
+    background-color: #f4f4f4; /* Light grey background */
     margin: 1rem auto;
     max-width: 800px;
     border-radius: 8px;
@@ -57,7 +55,7 @@ section {
 }
 
 h2 {
-    color: #333; /* Dark grey headings for consistency */
+    color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
 }
@@ -65,7 +63,7 @@ h2 {
 /* Contact Section Styling */
 #contact {
     padding: 1rem;
-    background-color: #d1d1d1; /* Light grey background for contact section */
+    background-color: #d1d1d1; /* Lighter grey background */
     border-radius: 8px;
     max-width: 800px;
     margin: 1rem auto;
@@ -74,8 +72,8 @@ h2 {
 
 /* Footer Styling */
 footer {
-    background-color: #333; /* Dark grey background for footer */
-    color: #fff; /* White text for contrast */
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
