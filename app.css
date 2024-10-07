@@ -32,9 +32,10 @@ body {
     width: 100%;
     max-width: 260px;
     height: auto;
-    position: relative;  /* Position the element absolutely */
-    display: block;         /* Align to the left */
-    margin: 35px auto;        /* Add some space from the edges */
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: 30px auto;        /* Add some space from the edges */
 }
 
 /* Navigation Styling */
@@ -113,8 +114,12 @@ footer {
     }
 
     #logo img {
-        max-width: 150px;   /* Resize the image for smaller screens */
-        margin-top: 20px;   /* Add space from the top if needed */
+        width: 100%;           /* Make sure it scales with the screen */
+        max-width: 150px;       /* Resize for smaller screens */
+        height: auto;           /* Keep the aspect ratio */
+        position: relative;     /* Remove absolute positioning on mobile */
+        margin: 0 auto;         /* Center horizontally */
+        display: block;         /* Ensure the image is centered */
     }
 
     main, #contact {
