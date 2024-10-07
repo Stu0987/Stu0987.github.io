@@ -6,9 +6,9 @@ body {
     padding: 0;
     background-color: #933d3d; /* Red background for overall body */
     color: #333; /* Dark grey text for readability */
-    min-height: 100vh; /* Ensures the body is at least the height of the viewport */
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensures body takes the full viewport height */
 }
 
 /* Header Styling */
@@ -51,7 +51,7 @@ main {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Ensures the main content takes up available space */
+    flex: 1; /* Flex property to fill remaining space */
 }
 
 section {
@@ -81,6 +81,8 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    /* Ensures footer stays at the bottom */
+    flex-shrink: 0;
 }
 
 /* Responsive Design */
