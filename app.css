@@ -31,7 +31,7 @@ body {
 #logo img {
     width: 100%;
     max-width: 260px;
-    height: auto;
+    height: 120px;
     position: absolute;
     top: 0;
     left: 20px;
@@ -116,7 +116,7 @@ footer {
     #logo img {
         width: 100%;           /* Make sure it scales with the screen */
         max-width: 150px;       /* Resize for smaller screens */
-        height: auto;           /* Keep the aspect ratio */
+        height: 100%;           /* Keep the aspect ratio */
         position: relative;     /* Remove absolute positioning on mobile */
         margin: 0 auto;         /* Center horizontally */
         display: block;         /* Ensure the image is centered */
