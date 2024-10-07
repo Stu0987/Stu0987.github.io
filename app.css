@@ -29,12 +29,12 @@ body {
 
 /* Logo Styling */
 #logo img {
-    width: 260px;
-    height: 120px;
-    position: absolute;  /* Position the element absolutely */
-    top: 0;              /* Align to the top */
-    left: 0;             /* Align to the left */
-    margin: 35px;        /* Add some space from the edges */
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    position: relative;  /* Position the element absolutely */
+    display: block;         /* Align to the left */
+    margin: 35px auto;        /* Add some space from the edges */
 }
 
 /* Navigation Styling */
@@ -110,6 +110,11 @@ footer {
     header nav ul {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    #logo img {
+        max-width: 150px;   /* Resize the image for smaller screens */
+        margin-top: 20px;   /* Add space from the top if needed */
     }
 
     main, #contact {
