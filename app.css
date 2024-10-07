@@ -20,6 +20,7 @@ body {
     text-shadow: #000 0 4px 8px;
     font-family: 'Times New Roman', Times, serif;
     position: relative; /* Make the logo relative to this container */
+    box-shadow: #000 0 2px 4px;
 }
 
 #site-title {
@@ -31,11 +32,12 @@ body {
 #logo img {
     width: 100%;
     max-width: 260px;
-    height: 120px;
+    height: 130px;
     position: absolute;
     top: 0;
     left: 20px;
-    margin: 30px auto;        /* Add some space from the edges */
+    margin: 30px auto;
+    box-shadow: #000 0 4px 8px;
 }
 
 /* Navigation Styling */
@@ -56,6 +58,7 @@ header nav ul li a {
     text-decoration: none;
     transition: color 0.3s;
     text-shadow: black 0 4px 8px;
+    font-size: larger;
 }
 
 header nav ul li a:hover {
