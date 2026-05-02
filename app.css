@@ -1,132 +1,192 @@
-/* General Styling */
-body {
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #933d3d; /* Red background for overall body */
-    color: #333; /* Dark grey text for readability */
-    min-height: 100vh; /* Ensure body fills at least the full viewport height */
-    display: flex;
-    flex-direction: column;
+/* Base Styling */
+* {
     box-sizing: border-box;
 }
 
-/* Header Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #121417;
+    color: #e5e7eb;
+}
+
+/* Header */
 .main-header {
-    background-color: #333; /* Dark grey background */
-    color: #d1d1d1; /* Light grey text */
-    padding: 1rem;
+    position: relative;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    border-bottom: 3px solid #933d3d;
     text-align: center;
-    text-shadow: #000 0 4px 8px;
-    font-family: 'Times New Roman', Times, serif;
-    position: relative; /* Make the logo relative to this container */
-    box-shadow: #000 0 2px 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+#logo img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 #site-title {
-    font-size: 2rem;
-    margin-top: 50px; /* Create space for the logo */
+    margin: 0.75rem 0 0.25rem;
+    font-size: 2.3rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
 }
 
-/* Logo Styling */
-#logo img {
-    width: 100%;
-    max-width: 260px;
-    height: 130px;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    margin: 30px auto;
-    box-shadow: #000 0 4px 8px;
+.tagline {
+    margin: 0 0 1.5rem;
+    color: #d1d5db;
+    font-size: 1rem;
 }
 
-/* Navigation Styling */
-header nav ul {
+/* Navigation */
+#main-navigation ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
-header nav ul li {
-    font-weight: bold;
-}
-
-header nav ul li a {
-    color: #933d3d; /* Red link color */
+#main-navigation a {
+    display: inline-block;
+    padding: 0.55rem 0.9rem;
+    color: #f3f4f6;
     text-decoration: none;
-    transition: color 0.3s;
-    text-shadow: black 0 4px 8px;
-    font-size: larger;
+    font-weight: 700;
+    border: 1px solid #374151;
+    border-radius: 999px;
+    background-color: rgba(17, 24, 39, 0.7);
+    transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 
-header nav ul li a:hover {
-    color: #ccc; /* Grey hover effect */
+#main-navigation a:hover,
+#main-navigation a:focus {
+    background-color: #933d3d;
+    border-color: #b45353;
+    transform: translateY(-2px);
 }
 
-/* Main Content Styling */
+/* Main Layout */
 main {
-    padding: 2rem;
-    background-color: #cecece; /* Light grey background */
-    margin: 1rem auto;
-    width: 90% ;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Ensures the main content takes up remaining space */
+    width: 92%;
+    max-width: 1000px;
+    margin: 2rem auto;
 }
 
-section {
-    margin-bottom: 2rem;
+/* Content Sections */
+.content-section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+.content-section h2 {
+    margin-top: 0;
+    color: #ffffff;
+    border-bottom: 2px solid #933d3d;
     padding-bottom: 0.5rem;
 }
 
-/* Contact Section Styling */
-#contact {
-    padding: 1rem;
-    background-color: #d1d1d1; /* Lighter grey background */
-    border-radius: 8px;
-    width: 90% ;
-    max-width: 800px;
-    margin: 1rem auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.content-section p {
+    color: #d1d5db;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+/* Project Cards */
+.project-card {
+    margin-top: 1rem;
     padding: 1rem;
-    margin-top: auto;
-    width: 100%;
-    box-sizing: border-box; /* Prevent any width-related issues */
+    background-color: #111827;
+    border-left: 4px solid #933d3d;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: #ffffff;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+/* Focus List */
+.focus-list {
+    padding-left: 1.25rem;
+    color: #d1d5db;
+}
+
+.focus-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: #fca5a5;
+}
+
+a:hover,
+a:focus {
+    color: #fecaca;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #111827;
+    color: #9ca3af;
+    border-top: 1px solid #374151;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+@media (max-width: 760px) {
+    .main-header {
+        padding-top: 1rem;
     }
 
     #logo img {
-        width: 100%;           /* Make sure it scales with the screen */
-        max-width: 150px;       /* Resize for smaller screens */
-        height: 100%;           /* Keep the aspect ratio */
-        position: relative;     /* Remove absolute positioning on mobile */
-        margin: 0 auto;         /* Center horizontally */
-        display: block;         /* Ensure the image is centered */
+        position: static;
+        display: block;
+        max-width: 140px;
+        margin: 0 auto 1rem;
     }
 
-    main, #contact {
+    #site-title {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
+    .content-section {
         padding: 1rem;
-        margin: 0.5rem;
     }
 }
