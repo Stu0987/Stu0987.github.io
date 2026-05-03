@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stuart | Cybersecurity & AI</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="icon" href="static/icons/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-    <header class="main-header">
-        <a id="logo" href="https://github.com/Stu0987" title="Visit my GitHub profile" target="_blank" rel="noopener noreferrer">
-            <img src="Github.png" alt="GitHub profile logo">
-        </a>
-
-        <div class="header-content">
-            <h1 id="site-title">Stuart | Cybersecurity & AI</h1>
-            <p class="tagline">Cybersecurity Homelab • Django Development • AI/ML Projects</p>
-
-            <nav id="main-navigation" aria-label="Main navigation">
-                <ul>
+    <header class="site-header">
+        <div class="header-container">
+            <a class="logo-link" href="https://github.com/Stu0987" target="_blank" rel="noopener noreferrer">
+                <img src="static/images/Github.png" alt="GitHub profile logo" class="logo">
+            </a>
+            <div class="header-text">
+                <h1 class="site-title">Stuart | Cybersecurity & AI</h1>
+                <p class="site-tagline">Cybersecurity Homelab • Django Development • AI/ML Projects</p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#focus">Current Focus</a></li>
+                    <li><a href="#current-focus">Current Focus</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <main>
+    
+    <main class="main-content">
         <section id="about" class="content-section">
             <h2>About Me</h2>
             <p>
@@ -40,53 +40,53 @@
                 Django applications, data pipelines, local AI tools, and machine learning experiments.
             </p>
         </section>
-
+        
         <section id="projects" class="content-section">
             <h2>Projects</h2>
-
-            <div class="project-card">
-                <h3>SOC Homelab</h3>
-                <p>
-                    A virtual cybersecurity lab using Proxmox, pfSense, Security Onion, Splunk,
-                    Windows, Linux, and Kali Linux to practice monitoring, detection, and analysis.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Auth Log Pipeline + AI Security Analysis</h3>
-                <p>
-                    A data pipeline designed to collect authentication logs, process raw security data,
-                    identify patterns, and support AI-assisted analysis.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Django Labs Platform</h3>
-                <p>
-                    A Django-based platform for backend development, API integration, and data projects,
-                    including NASA APOD and OpenWeather API work.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>AI Sandbox</h3>
-                <p>
-                    Experimental agent-based AI projects focused on local LLM workflows, automation,
-                    project memory, and structured task execution.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Reinforcement Learning</h3>
-                <p>
-                    Q-learning and Deep Q-Network experiments using Pong-style environments to study
-                    reward systems, training behavior, and model improvement.
-                </p>
+            <p class="section-intro">
+                These projects represent the main areas I am building: cybersecurity infrastructure,
+                backend development, data pipelines, and applied AI.
+            </p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>SOC Homelab</h3>
+                    <p>
+                        A virtual cybersecurity lab using Proxmox, pfSense, Security Onion, Splunk,
+                        Windows, Linux, and Kali Linux for monitoring, detection, and analysis practice.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <h3>Auth Log Pipeline + AI Security Analysis</h3>
+                    <p>
+                        A data pipeline for collecting authentication logs, processing raw security data,
+                        identifying patterns, and supporting AI-assisted analysis.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <h3>Django Labs Platform</h3>
+                    <p>
+                        A Django-based platform for backend development, API integration, and data projects,
+                        including NASA APOD and OpenWeather API work.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <h3>AI Sandbox</h3>
+                    <p>
+                        Experimental agent-based AI projects focused on local LLM workflows, automation, project memory, and structured task execution.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <h3>Reinforcement Learning</h3>
+                    <p>
+                        Q-learning and Deep Q-Network experiments using Pong-style environments to study reward systems, training behavior, and model improvement.
+                    </p>
+                </article>
             </div>
         </section>
-
-        <section id="focus" class="content-section">
+        
+        <section id="current-focus" class="content-section">
             <h2>Current Focus</h2>
+
             <ul class="focus-list">
                 <li>Building a professional cybersecurity portfolio</li>
                 <li>Documenting SOC homelab architecture and detections</li>
@@ -94,8 +94,9 @@
                 <li>Expanding AI-assisted security analysis workflows</li>
                 <li>Preparing for cybersecurity career opportunities</li>
             </ul>
-        </section>
 
+        </section>
+        
         <section id="contact" class="content-section">
             <h2>Contact</h2>
             <p>
@@ -106,10 +107,12 @@
             </p>
             <p>Email: Example@gmail.com</p>
         </section>
+    
     </main>
-
-    <footer>
+    
+    <footer class="site-footer">
         <p>&copy; 2026 Stuart. Built as part of my cybersecurity and AI portfolio.</p>
     </footer>
+
 </body>
 </html>
